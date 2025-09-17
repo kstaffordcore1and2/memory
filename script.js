@@ -306,7 +306,7 @@ function generateCards(weekNumber) {
 
         const cardFront = document.createElement('div');
         cardFront.classList.add('card-front');
-        cardFront.textContent = ' ';
+        cardFront.textContent = 'Flip Me';
 
         const cardBack = document.createElement('div');
         cardBack.classList.add('card-back');
@@ -349,8 +349,6 @@ function checkForMatch() {
 function disableCards() {
     setTimeout(() => {
         flippedCards.forEach(card => {
-            // Cards are already flipped due to the click.
-            // We just need to mark them as 'matched'
             card.classList.add('matched');
         });
         updateScore(2);
@@ -390,7 +388,9 @@ function checkWinCondition() {
 let currentWeek = 1;
 
 function createSidebarLinks() {
-    for (let i = 1; i <= 18; i++) {
+    // Change the number here to control which weeks are visible.
+    // Right now, it shows weeks 1 through 4.
+    for (let i = 1; i <= 4; i++) {
         const link = document.createElement('a');
         link.href = '#';
         link.textContent = `Week ${i} notecard`;
