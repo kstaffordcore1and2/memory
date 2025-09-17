@@ -306,7 +306,7 @@ function generateCards(weekNumber) {
 
         const cardFront = document.createElement('div');
         cardFront.classList.add('card-front');
-        cardFront.textContent = 'Flip Me';
+        cardFront.textContent = ' ';
 
         const cardBack = document.createElement('div');
         cardBack.classList.add('card-back');
