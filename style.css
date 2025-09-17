@@ -77,7 +77,7 @@ h1 {
 
 .game-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr); /* This is the key change for the new layout */
     gap: 15px;
     width: 100%;
     max-width: 900px;
@@ -116,7 +116,7 @@ h1 {
     padding: 10px;
     box-sizing: border-box;
     border-radius: 8px;
-    line-height: 1.2; /* Better readability for long text */
+    line-height: 1.2;
 }
 
 .card-front {
@@ -149,7 +149,7 @@ h1 {
 /* For screens smaller than 1100px (e.g., laptops) */
 @media (max-width: 1100px) {
     .game-container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr); /* 4 columns for a smaller horizontal layout */
         max-width: 700px;
     }
 }
@@ -173,7 +173,7 @@ h1 {
         text-align: center;
     }
     .game-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
         max-width: 500px;
     }
 }
@@ -185,5 +185,8 @@ h1 {
     }
     .card-front, .card-back {
         font-size: 0.9rem;
+    }
+    .game-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for phones */
     }
 }
