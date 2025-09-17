@@ -77,10 +77,10 @@ h1 {
 
 .game-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Back to 4 columns */
+    grid-template-columns: repeat(6, 1fr); /* Now a 6-column grid for large screens */
     gap: 15px;
     width: 100%;
-    max-width: 900px;
+    max-width: 100%; /* Changed to accommodate wider screens */
     margin: auto;
 }
 
@@ -146,11 +146,17 @@ h1 {
 
 /* --- Responsive Design Media Queries --- */
 
-/* For screens smaller than 1100px (e.g., laptops) */
-@media (max-width: 1100px) {
+/* For screens smaller than 1200px (e.g., laptops) */
+@media (max-width: 1200px) {
     .game-container {
-        grid-template-columns: repeat(3, 1fr); /* Adjusted to 3 columns to save space */
-        max-width: 700px;
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* For screens smaller than 1000px (e.g., smaller laptops) */
+@media (max-width: 1000px) {
+    .game-container {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -173,7 +179,7 @@ h1 {
         text-align: center;
     }
     .game-container {
-        grid-template-columns: repeat(2, 1fr); /* Tablets and small devices get 2 columns */
+        grid-template-columns: repeat(3, 1fr);
         max-width: 500px;
     }
 }
@@ -185,5 +191,8 @@ h1 {
     }
     .card-front, .card-back {
         font-size: 0.9rem;
+    }
+    .game-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
