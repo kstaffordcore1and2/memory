@@ -301,7 +301,7 @@ let flippedCards = [];
 let lockBoard = false;
 let matchedPairs = 0;
 
-const backgroundMusic = new Audio('wiiuhomemenu.mp3');
+const backgroundMusic = new Audio('wiimenu.mp3');
 backgroundMusic.loop = true;
 const errorSound = new Audio('wii_u_error.mp3');
 
