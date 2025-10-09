@@ -11,7 +11,7 @@ const notecardData = {
     ],
     '1b': [
         { term: "Apple File System (APFS)", definition: "The way Apple devices organize and protect files." },
-        { term: "Automatic Private Internet Protocol Addressing (APIPA)", definition: "A backup system that gives a computer an IP when none is available." },
+        { term: "Automatic Private Internet Protocol Addressing (APIPA)", definition: "A backup system that gives a computer an IP when none is available. e.g. 169.254.x.x" },
         { term: "Advanced RISC Machine (ARM)", definition: "A low-power chip design often used in phones and tablets." },
         { term: "Advanced Technology Extended (ATX)", definition: "A standard size and layout for desktop computer motherboards." },
         { term: "Business Email Compromise (BEC)", definition: "A scam that tricks people into sending money or data through fake emails." },
@@ -21,14 +21,14 @@ const notecardData = {
         { term: "Blue Screen of Death (BSOD)", definition: "A crash screen in Windows showing a serious error." },
         { term: "Bring Your Own Device (BYOD)", definition: "When employees or students use personal devices for work or school." },
         { term: "Calling-card Authorization Computer (CAC)", definition: "A system that checks and allows prepaid phone card calls." },
-        { term: "Common Internet File System (CIFS)", definition: "A way computers share files over a network." },
+        { term: "Common Internet File System (CIFS)", definition: "A way computers share files over a network. Replaced by SMB" },
         { term: "Configuration Management Database (CMDB)", definition: "A database that tracks IT systems and their details." },
         { term: "Canonical Name (CNAME)", definition: "A type of DNS record that points one website name to another." }
     ],
     '2b': [
         { term: "Central Processing Unit (CPU)", definition: "The main chip that runs instructions in a computer." },
         { term: "Serial Communications", definition: "Sending data one bit at a time in a line." },
-        { term: "Distributed Denial of Service (DDoS)", definition: "An attack that floods a website or server with too much traffic." },
+        { term: "Distributed Denial of Service (DDoS)", definition: "An attack that floods a website or server with too much traffic from network of compromised machines" },
         { term: "Double Data Rate (DDR)", definition: "A faster type of computer memory (RAM)." },
         { term: "Dynamic Host Configuration Protocol (DHCP)", definition: "A system that gives devices IP addresses automatically." },
         { term: "Dual In-line Memory Module (DIMM)", definition: "A stick of RAM used in desktops and servers." }
@@ -38,7 +38,7 @@ const notecardData = {
         { term: "Data Loss Prevention (DLP)", definition: "Tools that stop sensitive data from leaving a company." },
         { term: "Domain-based Message Authentication, Reporting, and Conformance (DMARC)", definition: "A rule set that blocks fake emails from being delivered." },
         { term: "Domain Name System (DNS)", definition: "The “phonebook” that changes website names into IP addresses." },
-        { term: "Denial of Service (DoS)", definition: "An attack that overloads a system so it can’t respond." },
+        { term: "Denial of Service (DoS)", definition: "An attack from a single source that overloads a system so it can’t respond." },
         { term: "Digital Rights Management (DRM)", definition: "Technology that controls how digital media (like movies or music) can be used." }
     ],
     '3b': [
@@ -58,7 +58,7 @@ const notecardData = {
         { term: "Facial Recognition Technology (FRT)", definition: "A system that identifies people by scanning their face." }
     ],
     '4b': [
-        { term: "File Transfer Protocol (FTP)", definition: "A way to move files between computers over a network." },
+        { term: "File Transfer Protocol (FTP)", definition: "A way to move files between computers over a network. Port 20/21" },
         { term: "Grandfather-Father-Son (Backup)", definition: "A backup method that keeps old, middle, and new copies of data." },
         { term: "Global Positioning System (GPS)", definition: "A satellite system that shows your location on Earth." },
         { term: "GUID Partition Table (GPT)", definition: "A modern way of storing partition information on a hard drive." },
@@ -68,13 +68,13 @@ const notecardData = {
     '5a': [
         { term: "High-definition Multimedia Interface (HDMI)", definition: "A cable that carries high-quality video and sound." },
         { term: "Hardware Security Module (HSM)", definition: "A physical device that safely stores digital keys and passwords." },
-        { term: "Hypertext Transfer Protocol (HTTP)", definition: "The basic system for loading web pages." },
-        { term: "Hypertext Transfer Protocol Secure (HTTPS)", definition: "A safer version of HTTP that encrypts web traffic." },
+        { term: "Hypertext Transfer Protocol (HTTP)", definition: "The basic system for loading web pages. Port 80" },
+        { term: "Hypertext Transfer Protocol Secure (HTTPS)", definition: "A safer version of HTTP that encrypts web traffic. Port 443" },
         { term: "Infrastructure as a Service (IaaS)", definition: "Renting computer resources like servers and storage from the cloud." },
         { term: "Identity and Access Management (IAM)", definition: "Tools that control who can log in and what they can do." }
     ],
     '5b': [
-        { term: "Internet Mail Access Protocol (IMAP)", definition: "A way to read emails that keeps messages stored on the server." },
+        { term: "Internet Mail Access Protocol (IMAP)", definition: "A way to read emails that keeps messages stored on the server. Port 143" },
         { term: "Input/Output Operations Per Second (IOPS)", definition: "A measure of how fast a storage device can read and write data." },
         { term: "Internet of Things (IoT)", definition: "Everyday devices connected to the internet, like smart lights or thermostats." },
         { term: "Internet Protocol (IP)", definition: "The rules for addressing and sending data across the internet." },
@@ -87,7 +87,7 @@ const notecardData = {
         { term: "Local Area Network (LAN)", definition: "A network that connects devices in a small area like a home or school." },
         { term: "Lucent Connector (LC)", definition: "A small connector used with fiber optic cables." },
         { term: "Liquid Crystal Display (LCD)", definition: "A flat-screen technology used in monitors and TVs." },
-        { term: "Lightweight Directory Access Protocol (LDAP)", definition: "A system that stores and looks up information like usernames and passwords." }
+        { term: "Lightweight Directory Access Protocol (LDAP)", definition: "A system that stores and looks up information like usernames and passwords. Port 389" }
     ],
     '6b': [
         { term: "Light-emitting Diode (LED)", definition: "A small, energy-efficient light source used in screens and electronics." },
@@ -111,10 +111,10 @@ const notecardData = {
         { term: "Near-field Communication (NFC)", definition: "A short-range wireless system used in tap-to-pay cards and phones." },
         { term: "Network Interface Card (NIC)", definition: "Hardware that connects a computer to a network." },
         { term: "New Technology File System (NTFS)", definition: "The main file system Windows uses to store and organize files." },
-        { term: "Network Time Protocol (NTP)", definition: "A system that keeps computer clocks accurate over a network." }
+        { term: "Network Time Protocol (NTP)", definition: "A system that keeps computer clocks accurate over a network. Port 123" }
     ],
     '8a': [
-        { term: "Non-volatile Memory Express (NVMe)", definition: "A fast way for SSDs to connect to a computer." },
+        { term: "Non-volatile Memory Express (NVMe)", definition: "A fast way for SSDs to connect to a computer. Latest iteration of SSDs and looks like a stick of gum." },
         { term: "Organic Light-emitting Diode (OLED)", definition: "A display technology where each pixel gives off its own light." },
         { term: "Optical Network Terminal (ONT)", definition: "A device that connects fiber internet into your home network." },
         { term: "Operating System (OS)", definition: "Software that runs the computer and manages programs and hardware." },
@@ -133,7 +133,7 @@ const notecardData = {
         { term: "Personal Identification Number (PIN)", definition: "A short number used to confirm identity, like at an ATM." },
         { term: "Personal Identity Verification (PIV)", definition: "A government-issued smart card for secure identification." },
         { term: "Power over Ethernet (PoE)", definition: "A system that sends power and network data over the same cable." },
-        { term: "Post Office Protocol (POP3)", definition: "An email system that downloads messages to your device." },
+        { term: "Post Office Protocol (POP3)", definition: "An email system that downloads messages to your device. Port 110" },
         { term: "Power-on Self-test (POST)", definition: "A startup check that tests computer hardware before booting." },
         { term: "Potentially Unwanted Program (PUP)", definition: "Software that may cause problems even if it isn’t malware." }
     ],
@@ -141,7 +141,7 @@ const notecardData = {
         { term: "Remote Authentication Dial-in User Server (RADIUS)", definition: "A system that checks and manages remote logins." },
         { term: "Redundant Array of Independent Disks (RAID)", definition: "A way of storing data across multiple drives for speed or safety." },
         { term: "Random-access Memory (RAM)", definition: "Fast temporary memory that helps a computer run programs." },
-        { term: "Remote Desktop Protocol (RDP)", definition: "A tool that lets you use another computer from far away." },
+        { term: "Remote Desktop Protocol (RDP)", definition: "A tool that lets you use another computer from far away. Port 3389." },
         { term: "Resilient File System (ReFS)", definition: "A Windows file system built to handle errors and large amounts of data." },
         { term: "Radio-frequency Identification (RFID)", definition: "A wireless system that uses tags and readers, like in keycards or store scanners." }
     ],
@@ -151,7 +151,7 @@ const notecardData = {
         { term: "Remote Monitoring and Management (RMM)", definition: "Software that lets IT staff watch and fix computers from far away." },
         { term: "Rapid Security Response (RSR)", definition: "A fast security update that fixes urgent problems." },
         { term: "Software as a Service (SaaS)", definition: "A cloud service where apps run online instead of being installed." },
-        { term: "Storage Area Network (SAN)", definition: "A special network that connects servers to large amounts of storage." }
+        { term: "Storage Area Network (SAN)", definition: "A special network that connects servers to LARGE amounts of storage." }
     ],
     '10b': [
         { term: "Security Assertions Markup Language (SAML)", definition: "A tool that lets users log in once and access many services securely." },
@@ -167,7 +167,7 @@ const notecardData = {
         { term: "Self-monitoring Analysis and Reporting Technology (SMART)", definition: "A system that checks hard drives for signs of failure." },
         { term: "Server Message Block (SMB)", definition: "A protocol for sharing files and printers on a network." },
         { term: "Short Message Service (SMS)", definition: "A system for sending text messages on phones." },
-        { term: "Simple Mail Transfer Protocol (SMTP)", definition: "A protocol used to send emails." }
+        { term: "Simple Mail Transfer Protocol (SMTP)", definition: "A protocol used to send emails. Port 25" }
     ],
     '11b': [
         { term: "Small Outline Dual In-line Memory Module (SODIMM)", definition: "A smaller type of RAM used in laptops." },
@@ -179,7 +179,7 @@ const notecardData = {
     ],
     '12a': [
         { term: "Solid-state Drive (SSD)", definition: "A fast storage device with no moving parts." },
-        { term: "Secure Shell (SSH)", definition: "A secure way to log in to another computer over a network." },
+        { term: "Secure Shell (SSH)", definition: "A secure way to log in to another computer over a network. Port 22" },
         { term: "Service Set Identifier (SSID)", definition: "The name of a Wi-Fi network." },
         { term: "Single Sign-on (SSO)", definition: "Logging in once to access multiple systems or apps." },
         { term: "Straight Tip (ST) Connector", definition: "A round fiber optic cable connector that twists to lock." },
@@ -214,7 +214,7 @@ const notecardData = {
         { term: "Video Random-access Memory (VRAM)", definition: "Memory used by graphics cards to store images and videos." },
         { term: "Wide Area Network (WAN)", definition: "A network that covers a large geographic area, like the internet." },
         { term: "Windows Remote Management (WinRM)", definition: "A Windows tool for controlling computers remotely." },
-        { term: "Wireless Internet Service Provider (WISP)", definition: "A company that provides internet through wireless signals." },
+        { term: "Wireless Internet Service Provider (WISP)", definition: "A company that provides internet through wireless signals. Need a clear line of sight." },
         { term: "Wireless LAN (WLAN)", definition: "A Wi-Fi network that connects devices without cables." }
     ],
     '14b': [
@@ -246,7 +246,7 @@ const notecardData = {
         { term: "Punchdown block & Punchdown tool", definition: "A board and tool used to connect wires in networking." },
         { term: "Digitizer", definition: "A device that converts drawings or handwriting into digital data." },
         { term: "Inverter", definition: "A device that changes DC power into AC power." },
-        { term: "T568B vs T568A", definition: "Two wiring standards for Ethernet cables." },
+        { term: "T568B vs T568A", definition: "T568B: o/w, o, gr/w, blu, blu/w, gr, br/w, br.  T568B: gr/w, gr, o/w, blu, blu/w, o, br/w, br" },
         { term: "Coaxial (Coax)", definition: "A cable with a single copper wire and shield used for internet and TV." }
     ],
     '16b': [
@@ -434,8 +434,8 @@ function checkWinCondition() {
 }
 
 function createSidebarLinks() {
-    // Only show 1a, 1b, 2a, 2b, 3a, 3b, 4a, 4b, 5a, 5b
-    const weeksToShow = ['1a', '1b', '2a', '2b', '3a', '3b', '4a', '4b', '5a', '5b'];
+    // Only show 1a, 1b, 2a, 2b, 3a, 3b, 4a, 4b, 5a, 5b, 6a, 6b
+    const weeksToShow = ['1a', '1b', '2a', '2b', '3a', '3b', '4a', '4b', '5a', '5b', '6a', '6b'];
     weeksToShow.forEach(weekKey => {
         const link = document.createElement('a');
         link.href = '#';
