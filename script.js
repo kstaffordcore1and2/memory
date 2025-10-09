@@ -412,7 +412,7 @@ function unflipCards() {
         });
         updateScore(-1);
         resetBoard();
-    }, 3000);
+    }, 4000);
 }
 
 function resetBoard() {
