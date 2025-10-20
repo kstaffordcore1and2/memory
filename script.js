@@ -435,7 +435,7 @@ function checkWinCondition() {
 
 function createSidebarLinks() {
     // Only show 1a, 1b, 2a, 2b, 3a, 3b, 4a, 4b, 5a, 5b, 6a, 6b
-    const weeksToShow = ['1a', '1b', '2a', '2b', '3a', '3b', '4a', '4b', '5a', '5b', '6a', '6b'];
+    const weeksToShow = ['1a', '1b', '2a', '2b', '3a', '3b', '4a', '4b', '5a', '5b', '6a', '6b', '7a', '7b'];
     weeksToShow.forEach(weekKey => {
         const link = document.createElement('a');
         link.href = '#';
